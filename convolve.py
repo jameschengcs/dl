@@ -16,7 +16,7 @@ def loadImage(path):
     global imgW, imgH
     imgSize = (imgW, imgH) # (W, H)
     img = Image.open(path)
-    img = img.resize(imgSize).convert('L') 
+    img = img.resize(imgSize, resample = Image.BILINEAR).convert('L') 
     imgData = np.array(img) / 255.0
     return imgData  
 
