@@ -27,7 +27,7 @@ def loadImage(path):
 timeS = time.time()
 # Loading data
 
-model = load_model('caltech_best.h5')
+model = load_model('caltech.h5')
 
 Xr = np.concatenate([ [loadImage('starlux.jpg')], [loadImage('CBR.jpg')], [loadImage('ship.jpg')]])
 #Xr = np.concatenate([[loadImage(imgMainDir + 'airplanes/image_0015.jpg')], [loadImage(imgMainDir + 'Motorbikes/image_0012.jpg')], [loadImage(imgMainDir + 'car_side/image_0017.jpg')]])
